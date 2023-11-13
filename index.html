@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>CRUD</title>
+   <script src="javi.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center><h1>Consultorio Medico</h1></center>
+
+<div id="datoss">
+        <label >Nombre completo del paciente</label>
+    <input type="text" id="name">
+        <br>
+
+        <label >DNI</label>
+    <input type="text" id="dni">
+        <br>
+        <label >Obra social</label>
+    <input type="text" id="obra">
+        <br>
+        <label >Sucursal</label>
+    <input type="text" id="sucu">
+        <br>
+        <label >Fecha y hora del turno</label>
+    <input type="datetime-local" id="fyh">
+        <br>
+
+    <button onclick="registrar()">Registrar</button>
+    <button onclick="limpiarcampos()">Limpiar campos</button>
+    <button onclick="editarDatos()">Editar Datos</button>
+</div>
+
+
+<div id="datos">
+   
+    
+    <label id="lbnombre"></label>
+    <br>
+    <label id="lbdni"></label>
+    <br>
+    <label id="lbobra"></label>
+    <br>
+    <label id="lbfyh"></label>
+    <br>
+    <label id="lbsucu"></label>
+
+        <table id="tablaDatos">
+            <tr>
+                <th>Nombre</th>
+                <th>DNI</th>
+                <th>Obra social</th>
+                <th>Sucursal</th>
+                <th>Fecha y hora del turno</th>
+            </tr>
+        </table>
+    </div>
+   
+   
+   
+
+</body>
+</html>
